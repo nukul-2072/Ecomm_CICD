@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nodejs-server:
+    build:
+      dockerfile: /dockerfile
+    ports:
+      - "2207:80"
+    
+    

@@ -1,0 +1,11 @@
+.container{
+  width: 50%;
+  height: auto;
+}
+
+.MyStyle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}

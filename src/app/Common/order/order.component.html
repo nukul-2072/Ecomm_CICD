@@ -1,0 +1,26 @@
+<!-- <p>order works!</p> -->
+
+<div class="container d-flex flex-wrap">
+
+  <div class="card mb-3 imgStyle mt-2 mb-2 text-dark bg-light border-info">
+    <div class="row g-0">
+      <div class="col-md-4 addimg">
+        <img
+        src="{{TheImagePath}}" width="100%"
+          alt="Trendy Pants and Shoes"
+          class="img-fluid rounded-start"
+        />
+      </div>
+      <div class="col-md-8 cardWid">
+        <div class="card-body cardBody">
+          <h1 class="card-title">{{Ordered.title}}</h1>
+          <p class="card-text">{{Ordered.description}}</p>
+          <div class="container d-flex justify-content-between">
+            <a routerLink="/Master/offline" [state]="[Ordered,'Offline']" class="btn btn-danger">Cash On Delivery</a>
+            <a routerLink="/Master/offline" [state]="[Ordered,'Online']" class="btn btn-success">Pay Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
